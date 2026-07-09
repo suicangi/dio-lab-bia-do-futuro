@@ -4,15 +4,12 @@
 
 Descreva se usou os arquivos da pasta `data`, por exemplo:
 
-| Arquivo | Formato | Utilização no Agente |
+| Arquivo | Formato | Para que serve no Pato? |
 |---------|---------|---------------------|
-| `historico_atendimento.csv` | CSV | Contextualizar interações anteriores |
-| `perfil_investidor.json` | JSON | Personalizar recomendações |
-| `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil |
-| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
-
-> [!TIP]
-> **Quer um dataset mais robusto?** Você pode utilizar datasets públicos do [Hugging Face](https://huggingface.co/datasets) relacionados a finanças, desde que sejam adequados ao contexto do desafio.
+| `historico_atendimento.csv` | CSV | Contextualizar interações anteriores, dar continuidade no atendimento (Histórico do cliente) |
+| `perfil_investidor.json` | JSON | Personalização das recomendações para o cliente, ou seja, explicação sobre as dúvidas e necessidades do cliente |
+| `produtos_financeiros.json` | JSON | Base de dados dos produtos a serem explicados, ensinados ou sugeridos ao cliente |
+| `transacoes.csv` | CSV | Histórico dos gastos do cliente e com essas informações utilizá-las de forma didática |
 
 ---
 
