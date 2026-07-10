@@ -1,5 +1,15 @@
 # Base de Conhecimento
 
+> [!TIP]
+> **Prompt sugerido para esta etapa:**
+> Preciso organizar toda a base de conhecimento para o meu agente.
+> Tenho estes arquivos: [lista os arquivos].
+> Me ajude a:
+> (1) entender o conteúdo dos arquivos.
+> (2) decidir a usabilidade de cada arquivo.
+> (3) criar um exemplo de contexto formatado sem duplicatas para incluir no prompt.
+
+
 ## Dados Utilizados
 
 Descreva se usou os arquivos da pasta `data`, por exemplo:
