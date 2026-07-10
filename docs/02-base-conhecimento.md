@@ -41,10 +41,11 @@ Serão carregados os arquivos via código, mas poderá ser injetado dinamicament
 ```python
 import pandas as pd
 import json
-
-# ========== CARREGAR DADOS ========== 
-perfil_investidor = json.load('./data/perfil_investidor.json')	
-produtos_financeiros = json.load('./data/produtos_financeiros.json')
+ 
+with open('./data/perfil_investidor.json', 'r', encoding='utf-8') as f:
+    perfil_investidor = json.load(f)
+with open('./data/produtos_financeiros.json', 'r', encoding='utf-8') as f:	
+    produtos_financeiros = json.load(f)
 historico_atendimento = pd.read_csv('./data/historico_atendimento.csv')
 transacoes = pd.read_csv('./data/transacoes.csv')
 ```
