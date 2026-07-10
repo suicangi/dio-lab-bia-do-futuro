@@ -107,7 +107,7 @@ Onde devo investir meu dinheiro?
 
 **Agente:**
 ```
-Eu não posso fazer uma recomendação de investimento, sou um facilitador e um educador financeiro somente. 
+Eu não posso fazer uma recomendação de investimento, sou um facilitador e um educador financeiro somente. Mas, posso te ajudar com qualquer outra dúvida.
 ```
 
 ---
