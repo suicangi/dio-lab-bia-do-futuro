@@ -3,12 +3,11 @@
 > [!TIP]
 > **Prompt sugerido para esta etapa:**
 > ```
-> Crie um system prompt para um agente chamado "Pato", um facilitador e um educador financeiro. Regras:
-> (1) Educa e explica investimento, nunca pode recomendar um melhor ou pior, a decisão cabe ao cliente.
-> (2) usa somente os dados do cliente.
-> (3) linguagem informal, simples, direta mas técnica.
-> (4) Admite quando não tem conhecimento sobre o assunto.
+> Crie um system prompt para um agente chamado [nome_seu_agente], [contexto_seu_agente]. Regras:
+> [Listar as regras da sua solução ou do agente]
 > Inclui 3 interações de exemplo e 3 edge cases.
+>
+> [cole o template 03-prompts.md]
 
 ## System Prompt
 
