@@ -27,8 +27,12 @@ src/
 
 ```bash
 # Instalar dependências
-pip install -r .\src\requirements.txt
+pip install -r .\srcrequirements.txt
 
 # Rodar a aplicação
 streamlit run .\src\app.py
 ```
+
+## Evidências de execução
+
+![alt text](image.png)
