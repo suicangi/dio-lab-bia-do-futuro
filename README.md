@@ -1,35 +1,70 @@
-# 🦆 Pato: O Facilitador e Educador Financeiro
+# Pato: O Facilitador e Educador Financeiro 🦆
 
-O **Pato** é um agente inteligente e proativo de inteligência artificial generativa, desenvolvido como um projeto prático para o desafio de projeto da **DIO (Digital Innovation One)**. Ele foi projetado para transformar a relação das pessoas com o dinheiro, atuando não apenas como um chatbot tradicional reativo, mas como um consultor proativo focado em educação financeira de forma simples, acessível e segura.
+Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para agentes inteligentes e proativos.
+
+O **Pato** é um agente financeiro inteligente que utiliza IA Generativa para:
+- **Antecipar necessidades** ao invés de apenas responder perguntas (avisos proativos sobre gastos e investimentos).
+- **Personalizar sugestões** com base no contexto de cada cliente utilizando dados locais estruturados.
+- **Cocriar soluções financeiras** de forma consultiva com analogias leves e simples ("não pague o pato").
+- **Garantir segurança e confiabilidade** nas respostas (estratégias rigorosas anti-alucinação).
+
+Este projeto é um fork modificado a partir do template original `dio-lab-bia-do-futuro` da DIO.
 
 ---
 
-## 🚀 Objetivos do Projeto
-*   **Facilitação:** Traduzir termos financeiros complexos em conceitos simples do dia a dia.
-*   **Proatividade:** Antecipar necessidades e sugerir alertas de gastos com base no comportamento do usuário.
-*   **Educação Financeira:** Propor rotinas de poupança, investimentos adequados e planejamento de metas.
-*   **Segurança (Anti-Alucinação):** Garantir respostas extremamente confiáveis baseadas estritamente em dados reais e bases de conhecimento controladas.
+## 📂 Estrutura do Projeto
 
----
-
-## 📂 Estrutura do Repositório
-
-O desenvolvimento está dividido de maneira organizada entre código, dados simulados e documentação de arquitetura:
+O desenvolvimento do agente está organizado seguindo o mesmo padrão do template original:
 
 ```text
 📁 dio-lab-pato-do-futuro/
 │
-├── 📁 docs/                        # Documentação do Agente e Engenharia de Prompt
-│   ├── 📄 01-documentacao-agente.md # Caso de uso, Persona (Pato), Tom de Voz e Fluxos
-│   ├── 📄 02-base-conhecimento.md  # Estruturação e indexação dos dados mockados
-│   ├── 📄 03-prompts.md            # System Prompts utilizados e técnicas de Few-Shot
-│   ├── 📄 04-metricas.md           # Métricas de avaliação de segurança e respostas
-│   └── 📄 05-pitch-apresentacao.md # Roteiro e pitch final do projeto
+├── 📁 data/                          # Dados mockados do cliente (RAG local)
+│   ├── 📊 transacoes.csv             # Histórico de transações do cliente
+│   ├── 📊 historico_atendimento.csv   # Histórico de atendimentos anteriores
+│   ├── ⚙️ perfil_investidor.json     # Perfil e preferências do cliente
+│   └── ⚙️ produtos_financeiros.json   # Produtos e serviços disponíveis
 │
-├── 📁 data/                        # Base de Dados Mockados do Cliente (RAG)
-│   ├── 📊 transacoes.csv           # Histórico financeiro e comportamento de consumo
-│   ├── 📊 historico_atendimento.csv # Interações anteriores para análise de contexto
-│   ├── ⚙️ perfil_investidor.json   # Tolerância a riscos e preferências do usuário
-│   └── ⚙️ produtos_financeiros.json # Portfólio de produtos disponíveis para recomendação
+├── 📁 docs/                          # Documentação e Engenharia de Prompt do Pato
+│   ├── 📄 01-documentacao-agente.md   # Caso de uso, Persona, Tom de Voz e Fluxo do Agente
+│   ├── 📄 02-base-conhecimento.md    # Estrutura lógica da base de dados e RAG
+│   ├── 📄 03-prompts.md              # System Prompts estruturados e técnicas aplicadas
+│   ├── 📄 04-metricas.md             # Métricas de avaliação de segurança do modelo
+│   └── 📄 05-pitch-apresentacao.md   # Roteiro/Pitch de apresentação do projeto
 │
-└── 📄 README.md                    # Visão geral do projeto
+└── 📄 README.md                      # Visão geral do projeto
+
+```
+
+---
+
+## 🛠️ Arquitetura e Engenharia do Agente
+
+Para garantir uma simulação realista e segura de um assistente financeiro baseado em IA, o Pato foi modelado sob os seguintes pilares técnicos:
+
+1. **Contextualização Fiel (Grounding):** O agente foi instruído a restringir suas análises e recomendações estritamente aos limites dos dados presentes na pasta `data/`.
+2. **Engenharia de Prompt Robusta:** Utilização de técnicas avançadas de estruturação de prompts, incluindo:
+* *System Prompts* estritos com regras de segurança comportamental.
+* Cenários estruturados de *Few-Shot Prompting* para calibração fina da sua identidade verbal.
+* Instruções de *Chain-of-Thought* para raciocínio lógico em análises numéricas e recomendações de produtos.
+
+
+3. **Segurança e Anti-Alucinação:** Bloqueio ativo de respostas fora do contexto financeiro do cliente e salvaguardas para que o agente não crie (alucine) novos serviços ou ofertas que não estejam indexados no catálogo oficial.
+
+---
+
+## 👥 Persona: Quem é o Pato?
+
+Diferente de assistentes tradicionais formais e engessados, o **Pato** adota uma identidade comunicativa irreverente, didática e motivadora. Ele simplifica jargões pesados do mercado usando metáforas do dia a dia e está sempre focado em guiar o usuário em direção a uma saúde financeira sustentável de forma bem-humorada.
+
+---
+
+## ▶️ Pitch: Apresentação do Pato
+
+[\[Link do vídeo\]](https://youtu.be/R_kRxETGGUM)
+
+---
+
+## ✒️ Créditos e Origem
+
+Este projeto foi desenvolvido por [Inacio Araújo Magalhães Campos de Azevedo](https://www.google.com/search?q=https://github.com/suicangi) como solução para o desafio prático de IA Generativa da **DIO (Digital Innovation One)**.
